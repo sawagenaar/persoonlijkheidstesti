@@ -1,0 +1,119 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-size: 16px;
+  font-family: sans-serif;
+  background-image: url('./img/background.jpg');
+  background-size: 10%;
+  background-repeat: repeat;
+}
+.container {
+  max-width: 50em;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: #d7c5b0;
+  min-height: 100vh;
+  font-weight: normal;
+}
+.questions-list {
+  max-width: 35em;
+  margin: 0 auto;
+}
+.result {
+  margin: 3.2em auto;
+  max-width: 35em;
+}
+.question {
+  width: 100%;
+  padding: 1.25em;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: center;
+  border: 1px solid #8e959f;
+  color: #6b635b;
+  box-sizing: border-box;
+}
+.box-question {
+  background-color: #f2ebe4;
+  position: relative;
+  width: 100%;
+}
+.answer {
+  border: 1px solid #a5998b;
+  padding: 1.25em;
+  font-size: 1.125em;
+  width: 100%;
+  transition: 0.2s linear all;
+}
+.progress {
+  height: 3.125em;
+  margin-top: 0.6em;
+  background-color: #d5a074;
+  position: relative;
+}
+.bar {
+  height: 3.125em;
+  background-color: #b87333;
+  transition: all 0.3s ease;
+}
+.status {
+  position: absolute;
+  top: 15px;
+  left: 0;
+  text-align: center;
+  color: #fff;
+  width: 100%;
+}
+.answer:not(.is-answered) {
+  cursor: pointer;
+}
+.answer:not(.is-answered):hover {
+  background-color: #a5998b;
+  border-color: #a5998b;
+  color: #fff;
+}
+.title {
+  width: 100%;
+  padding: 1.25em;
+  font-size: 1.6em;
+  font-weight: bold;
+  text-align: center;
+  background-color: #d5a074;
+  color: #fff;
+  box-sizing: border-box;
+}
+.desc {
+  border: 1px solid #a5998b;
+  padding: 1.25em;
+  font-size: 1.5em;
+  width: 100%;
+  background-color: #f2ebe4;
+  transition: 0.4s linear all;
+  text-align: center;
+}
+.reset-btn {
+  background-color: #d5a074;
+  border: 0;
+  font-size: 1.4em;
+  color: #fff;
+  padding: 0.6em 1.6em;
+  margin: 0.6em auto;
+  display: block;
+}
+.reset-btn:active,.reset-btn:hover{
+  border: 0;
+  outline: 0;
+  background-color: #b87333;
+  cursor: pointer;
+}
+.v-enter-active,
+.v-leave-active {
+  transition: opacity 0.3s ease;
+}
+
+.v-enter-from,
+.v-leave-to {
+  opacity: 0;
+}
+
